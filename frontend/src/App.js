@@ -299,6 +299,12 @@ export default function App() {
                   component={() => <FindOrder />}
                   role="Reception"
                 />
+                <SecureRoute 
+                  path="/StudyElectronicOrders"
+                  exact
+                  component={() => <EOrderPage />}
+                  role="Reception"
+                />
                 <SecureRoute
                   path="/ReportNonConformingEvent"
                   exact
