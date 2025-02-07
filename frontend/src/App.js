@@ -33,6 +33,7 @@ import PathologyCaseView from "./components/pathology/PathologyCaseView";
 import ImmunohistochemistryDashboard from "./components/immunohistochemistry/ImmunohistochemistryDashboard";
 import ImmunohistochemistryCaseView from "./components/immunohistochemistry/ImmunohistochemistryCaseView";
 import RoutedResultsViewer from "./components/patient/resultsViewer/results-viewer.tsx";
+import DoubleEntryPage from "./components/doubleEntry/Index"
 import EOrderPage from "./components/eOrder/Index";
 import RoutineIndex from "./components/reports/routine/Index.js";
 import StudyIndex from "./components/reports/study/index.js";
@@ -297,6 +298,12 @@ export default function App() {
                   path="/SampleEdit"
                   exact
                   component={() => <FindOrder />}
+                  role="Reception"
+                />
+                <SecureRoute 
+                  path="/StudyDoubleEntry"
+                  exact
+                  component={() => <DoubleEntryPage />}
                   role="Reception"
                 />
                 <SecureRoute
