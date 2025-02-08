@@ -33,8 +33,9 @@ import PathologyCaseView from "./components/pathology/PathologyCaseView";
 import ImmunohistochemistryDashboard from "./components/immunohistochemistry/ImmunohistochemistryDashboard";
 import ImmunohistochemistryCaseView from "./components/immunohistochemistry/ImmunohistochemistryCaseView";
 import RoutedResultsViewer from "./components/patient/resultsViewer/results-viewer.tsx";
-import DoubleEntryPage from "./components/doubleEntry/Index"
+import DoubleEntryPage from "./components/doubleEntry/Index";
 import EOrderPage from "./components/eOrder/Index";
+import SampleEntryByProjectPage from "./components/sampleEntryByProject/Index.js";
 import RoutineIndex from "./components/reports/routine/Index.js";
 import StudyIndex from "./components/reports/study/index.js";
 import ReportIndex from "./components/reports/Index.js";
@@ -300,10 +301,10 @@ export default function App() {
                   component={() => <FindOrder />}
                   role="Reception"
                 />
-                <SecureRoute 
-                  path="/StudyDoubleEntry"
+                <SecureRoute
+                  path="/SampleEntryByProject"
                   exact
-                  component={() => <DoubleEntryPage />}
+                  component={() => <SampleEntryByProjectPage />}
                   role="Reception"
                 />
                 <SecureRoute
